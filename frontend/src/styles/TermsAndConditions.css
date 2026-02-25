@@ -1,0 +1,185 @@
+/* Terms and Conditions Page Styles */
+.terms-section {
+  padding: 120px 20px 80px 20px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.terms-header {
+  background: var(--gradient-dark);
+  color: var(--white);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.terms-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.terms-header p {
+  font-size: 1rem;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+.terms-content {
+  padding: 50px 40px;
+}
+
+.terms-item {
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.terms-item h2 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 10px;
+}
+
+.terms-item h3 {
+  font-size: 1.2rem;
+  color: var(--dark);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.terms-item p {
+  color: var(--dark);
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.terms-item ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.terms-item ul li {
+  color: var(--dark);
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.terms-item a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.terms-item a:hover {
+  color: #B30000;
+  text-decoration: underline;
+}
+
+.agreement-notice {
+  background: linear-gradient(135deg, rgba(212, 0, 0, 0.1) 0%, rgba(212, 0, 0, 0.05) 100%);
+  border-left: 5px solid var(--primary);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  margin-top: 50px;
+}
+
+.agreement-notice h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.agreement-notice p {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-section {
+    padding: 100px 15px 60px 15px;
+  }
+
+  .terms-container {
+    border-radius: var(--radius-md);
+  }
+
+  .terms-header {
+    padding: 40px 25px;
+  }
+
+  .terms-header h1 {
+    font-size: 2rem;
+  }
+
+  .terms-content {
+    padding: 30px 25px;
+  }
+
+  .terms-item h2 {
+    font-size: 1.3rem;
+  }
+
+  .terms-item p {
+    font-size: 0.95rem;
+  }
+
+  .agreement-notice {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-section {
+    padding: 80px 10px 40px 10px;
+  }
+
+  .terms-header {
+    padding: 30px 15px;
+  }
+
+  .terms-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .terms-header p {
+    font-size: 0.9rem;
+  }
+
+  .terms-content {
+    padding: 20px 15px;
+  }
+
+  .terms-item {
+    margin-bottom: 30px;
+  }
+
+  .terms-item h2 {
+    font-size: 1.1rem;
+  }
+
+  .terms-item p {
+    font-size: 0.9rem;
+  }
+
+  .terms-item ul {
+    margin-left: 15px;
+  }
+
+  .terms-item ul li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+}

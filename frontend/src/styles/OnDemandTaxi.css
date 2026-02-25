@@ -1,0 +1,559 @@
+/* On-Demand Taxi Service Styles */
+.on-demand-taxi {
+  padding: 120px 20px 80px 20px;
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.taxi-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.taxi-header h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.taxi-header p {
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+
+/* Feature Highlights */
+.taxi-features-highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+
+.feature-highlight {
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary);
+}
+
+.feature-highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-highlight .feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-highlight h3 {
+  color: var(--dark);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.feature-highlight p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* Taxi Services Grid */
+.taxi-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto 80px auto;
+}
+
+.taxi-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.taxi-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.taxi-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: var(--gradient-dark);
+}
+
+.taxi-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.taxi-card:hover .taxi-img {
+  transform: scale(1.1);
+}
+
+.taxi-type {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(212, 0, 0, 0.9);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.taxi-info {
+  padding: 22px;
+}
+
+.taxi-info h3 {
+  font-size: 1.3rem;
+  color: var(--dark);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.taxi-desc {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.taxi-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.taxi-specs span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taxi-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid var(--gray-light);
+}
+
+.taxi-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.taxi-book-btn {
+  padding: 10px 22px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+}
+
+.taxi-book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-red);
+  background: #B30000;
+}
+
+/* How It Works Section */
+.taxi-how-it-works {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.taxi-how-it-works h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.step {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  color: var(--dark);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.step p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* Safety Features Section */
+.taxi-safety-features {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.taxi-safety-features h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.safety-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.safety-item {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-left: 5px solid var(--primary);
+}
+
+.safety-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.safety-item .safety-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.safety-item h3 {
+  color: var(--dark);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.safety-item p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* Payment Methods Section */
+.taxi-payment-methods {
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  padding: 80px 20px;
+  margin: 0 -20px 80px -20px;
+}
+
+.taxi-payment-methods h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.payment-option {
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary);
+}
+
+.payment-option:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.payment-option .payment-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.payment-option h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Testimonials Section */
+.taxi-testimonials {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+}
+
+.taxi-testimonials h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial {
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.testimonial .stars {
+  color: var(--warning);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  color: var(--dark);
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial-author {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Benefits Section */
+.taxi-benefits {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+}
+
+.taxi-benefits h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.benefit-item {
+  background: linear-gradient(135deg, rgba(212, 0, 0, 0.05) 0%, rgba(212, 0, 0, 0.02) 100%);
+  padding: 25px;
+  border-radius: var(--radius-md);
+  border-left: 5px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateX(10px);
+  background: linear-gradient(135deg, rgba(212, 0, 0, 0.1) 0%, rgba(212, 0, 0, 0.05) 100%);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-item h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.benefit-item p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.taxi-cta {
+  background: var(--gradient-dark);
+  color: var(--white);
+  padding: 60px 40px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.taxi-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.taxi-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.taxi-cta-btn {
+  padding: 15px 40px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: var(--shadow-red);
+}
+
+.taxi-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(212, 0, 0, 0.4);
+  background: #B30000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .on-demand-taxi {
+    padding: 100px 15px 60px 15px;
+  }
+
+  .taxi-header h1 {
+    font-size: 2rem;
+  }
+
+  .taxi-services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .step {
+    padding: 20px 15px;
+  }
+
+  .taxi-cta {
+    padding: 40px 25px;
+  }
+
+  .taxi-cta h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .on-demand-taxi {
+    padding: 80px 10px 40px 10px;
+  }
+
+  .taxi-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .taxi-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .taxi-cta {
+    padding: 30px 20px;
+  }
+
+  .taxi-cta h2 {
+    font-size: 1.3rem;
+  }
+
+  .taxi-cta p {
+    font-size: 0.9rem;
+  }
+}

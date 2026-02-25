@@ -1,0 +1,211 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  color: var(--primary);
+}
+
+/* Nav links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+/* Individual links */
+.nav-links li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover underline animation */
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.nav-links li:hover {
+  color: var(--primary);
+}
+
+.nav-links li.active {
+  color: var(--primary);
+}
+
+/* Optional call-to-action button */
+.nav-links .cta {
+  padding: 10px 25px;
+  border-radius: var(--radius-sm);
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: var(--shadow-red);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links .cta:hover {
+  background: #B30000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 0, 0, 0.4);
+}
+
+.nav-links .cta::after {
+  display: none;
+}
+
+/* Fleet Dropdown Menu */
+.fleet-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(26, 26, 26, 0.98);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-sm);
+  min-width: 200px;
+  margin-top: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.fleet-option {
+  padding: 15px 20px;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(212, 0, 0, 0.2);
+}
+
+.fleet-option:last-child {
+  border-bottom: none;
+}
+
+.fleet-option:hover {
+  background: var(--primary);
+  color: var(--white);
+  padding-left: 25px;
+}
+
+/* Manager Button */
+.manager-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2) !important;
+  padding: 10px 20px !important;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.manager-btn:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Admin Button */
+.admin-btn {
+  background: linear-gradient(135deg, #f093fb, #f5576c) !important;
+  padding: 10px 20px !important;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  background: linear-gradient(135deg, #f5576c, #f093fb) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4) !important;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #d32f2f !important;
+  padding: 10px 20px !important;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #b71c1c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.4) !important;
+}
+
+/* User Profile */
+.user-profile {
+  background: rgba(102, 126, 234, 0.15);
+  padding: 8px 15px !important;
+  border-radius: 20px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  font-size: 14px;
+}
+
+.user-profile::after {
+  display: none !important;
+}
+
+/* Divider */
+.nav-links-divider {
+  color: rgba(255, 255, 255, 0.2) !important;
+  cursor: default !important;
+  padding: 0 5px !important;
+}
+
+.nav-links-divider::after {
+  display: none !important;
+}
+
+.nav-links-divider:hover {
+  color: rgba(255, 255, 255, 0.2) !important;
+}

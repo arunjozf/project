@@ -1,0 +1,126 @@
+.manager-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F5F5F5 0%, #FFFFFF 100%);
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+  --primary: #D40000;
+  --secondary: #000000;
+  --white: #FFFFFF;
+  --dark: #1A1A1A;
+  --gradient-primary: linear-gradient(135deg, #D40000 0%, #B30000 100%);
+  --gradient-dark: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
+  --shadow-red: 0 5px 20px rgba(212, 0, 0, 0.3);
+}
+
+.manager-content {
+  margin-left: 250px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.manager-header {
+  background: linear-gradient(135deg, #D40000 0%, #B30000 100%);
+  padding: 30px 40px;
+  box-shadow: 0 5px 20px rgba(212, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 5px solid #000;
+  border-top: 3px solid #FFB300;
+}
+
+.manager-header h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.manager-user-info {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #FFFFFF;
+  color: #D40000;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(212, 0, 0, 0.4);
+}
+
+.manager-body {
+  flex: 1;
+  padding: 40px;
+}
+
+.manager-body h2 {
+  color: #1A1A1A;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #D40000;
+  padding-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .manager-content {
+    margin-left: 70px;
+  }
+
+  .manager-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .manager-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .manager-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .manager-content {
+    margin-left: 0;
+  }
+
+  .manager-dashboard {
+    flex-direction: column;
+  }
+}

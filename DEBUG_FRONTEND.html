@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Error Check</title>
+</head>
+<body>
+    <div style="padding: 20px; font-family: Arial;">
+        <h1>🔍 Frontend Debug Checklist</h1>
+        <p style="color: #d32f2f; font-weight: bold;">The blank page usually means a JavaScript error in React.</p>
+        
+        <h2>Steps to Debug:</h2>
+        <ol>
+            <li><strong>Open Browser Console:</strong> Press F12 → Console tab</li>
+            <li><strong>Look for RED errors</strong> - copy them and share them</li>
+            <li><strong>Check Network tab:</strong> See if JS files loaded correctly</li>
+        </ol>
+        
+        <h2>Common Issues:</h2>
+        <ul>
+            <li>❌ Missing imports in components</li>
+            <li>❌ Syntax errors in JSX</li>
+            <li>❌ Missing dependencies</li>
+            <li>❌ API connection errors</li>
+            <li>❌ Component render errors (like trying to access undefined state)</li>
+        </ul>
+        
+        <h2>Quick Fix:</h2>
+        <pre style="background: #f5f5f5; padding: 10px; border-radius: 5px;">
+# Terminal 1: Stop current frontend
+Kill the Vite dev server
+
+# Terminal 2: Reinstall and rebuild
+cd frontend
+npm install
+npm run dev
+        </pre>
+        
+        <h2>Expected Result:</h2>
+        <p style="color: #2e7d32;">✅ Page should show content, not blank</p>
+    </div>
+</body>
+</html>

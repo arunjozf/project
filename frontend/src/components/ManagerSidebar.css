@@ -1,0 +1,211 @@
+/* Manager Sidebar Styling */
+.manager-sidebar {
+  width: 280px;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 2px solid rgba(212, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-title {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.sidebar-subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* Navigation */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.nav-section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 1rem 1rem 0.5rem 1rem;
+  padding-left: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  background: rgba(212, 0, 0, 0.15);
+  color: white;
+  transform: translateX(5px);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, rgba(212, 0, 0, 0.3) 0%, rgba(212, 0, 0, 0.1) 100%);
+  color: white;
+  border-left: 4px solid #D40000;
+  padding-left: calc(1rem - 4px);
+  box-shadow: inset 0 0 10px rgba(212, 0, 0, 0.1);
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  min-width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-label {
+  flex: 1;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.settings-btn,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.settings-btn:hover {
+  background: rgba(100, 150, 200, 0.3);
+}
+
+.logout-btn:hover {
+  background: rgba(212, 0, 0, 0.3);
+}
+
+.settings-btn span,
+.logout-btn span {
+  font-size: 1.1rem;
+}
+
+/* Scrollbar Styling */
+.manager-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.manager-sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.manager-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(212, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.manager-sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .manager-sidebar {
+    width: 70px;
+    padding: 0.8rem 0;
+  }
+
+  .sidebar-header {
+    padding: 1rem 0.5rem;
+  }
+
+  .sidebar-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .sidebar-subtitle {
+    display: none;
+  }
+
+  .nav-section-title {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 0.9rem 0.5rem;
+    justify-content: center;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-icon {
+    min-width: auto;
+  }
+
+  .settings-btn,
+  .logout-btn {
+    padding: 0.8rem 0.5rem;
+    justify-content: center;
+  }
+
+  .settings-btn span,
+  .logout-btn span {
+    margin: 0;
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 12px;
+  }
+}

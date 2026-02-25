@@ -1,0 +1,147 @@
+/* Local Cars Page Styles */
+.local-cars {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.local-cars-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.local-cars-header h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.local-cars-header p {
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+
+.local-cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.local-car-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.local-car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.local-car-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: var(--gradient-dark);
+}
+
+.local-car-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.local-car-card:hover .local-car-img {
+  transform: scale(1.1);
+}
+
+.local-car-type {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(212, 0, 0, 0.9);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.local-car-info {
+  padding: 20px;
+}
+
+.local-car-info h3 {
+  font-size: 1.2rem;
+  color: var(--dark);
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.local-car-desc {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.local-car-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.local-car-specs span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.local-car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.local-car-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.local-book-btn {
+  padding: 8px 20px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+}
+
+.local-book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-red);
+  background: #B30000;
+}
